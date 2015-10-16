@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<img id="img" src="" alt="">
+	<script>
+		setInterval(gameLoop, 300);
+		var count = 0;
+		
+		function gameLoop() {
+			count++;			
+			
+			img.src = "anim/" + (count%4) + ".png"
+		}
+	</script>
+</body>
+</html>
