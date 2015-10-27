@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Animação</title>
+</head>
+<body>
+	<img id="img">
+	<script>
+		var count = 0;
+		
+		function update() {
+			count++;
+			if(count > 8 ) {
+				count = 0;
+			}
+			img.src = count + ".png";
+		}
+		
+		setInterval(update, 100);
+		
+	</script>
+</body>
+</html>
